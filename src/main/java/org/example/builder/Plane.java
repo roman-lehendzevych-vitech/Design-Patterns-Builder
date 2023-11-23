@@ -1,5 +1,8 @@
 package org.example.builder;
 
+import lombok.Getter;
+
+@Getter
 public class Plane {
     private final String model;
     private final String type;
@@ -17,34 +20,6 @@ public class Plane {
         this.engineType = builder.engineType;
         this.engineCount = builder.engineCount;
         this.maxSpeed = builder.maxSpeed;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public Double getLength() {
-        return length;
-    }
-
-    public Double getWeight() {
-        return weight;
-    }
-
-    public String getEngineType() {
-        return engineType;
-    }
-
-    public Integer getEngineCount() {
-        return engineCount;
-    }
-
-    public Integer getMaxSpeed() {
-        return maxSpeed;
     }
 
     public static class builder {
